@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./utils/css/styles.css">
     <script src="./services/api.js"></script>
     <title>Document</title>
@@ -11,20 +12,121 @@
 
 <body>
     <header>
-        <div class="content-header">
+        <div class="header-bg"></div>
+        <div class="content">
             <h3>uma seleção de produtos</h3>
-            <h2>especial para você</h2>
-            <h6>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h6>
+            <h1>especial para você</h1>
+            <span>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</span>
+            <div class="header-buttons">
+                <button class="text-buttons">Conheça a Linx</button>
+                <button class="text-buttons">Ajude o algoritimo</button>
+                <button class="text-buttons">Seus produtos</button>
+                <button class="text-buttons">Compartilhe</button>
+            </div>
         </div>
     </header>
-    <section>
-        <div>
+    <section class="container">
+        <div class="item">
+            <h3>Ajude o algorítimo a ser mais certeiro</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu
+                risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna
+                tortor. Vivamus et arcu non felis tristique eleifend. <br> <br> Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante
+                vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est
+                vel metus.</p>
+        </div>
+        <div class="item form">
+            <form action="post">
+                <label for="name">Seu nome:</label>
+                <input type="text" name="name" id="name">
 
+                <label for="email">Seu email:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="cpf">Seu nome:</label>
+                <input type="text" name="cpf" id="cpf">
+
+                <div class="row radio-input">
+                    <div class="div-check">
+                        <input class="radio-style" type="radio" name="sex" id="checkM" value="M">
+                        <label for="checkM">Masculino</label>
+                    </div>
+                    <div class="div-check">
+                        <input class="radio-style" type="radio" name="sex" id="checkF" value="F">
+                        <label for="checkF">Feminino</label>
+                    </div>
+                </div>
+                <button class="text-buttons" type="submit">Enviar</button>
+            </form>
         </div>
     </section>
-    <footer>
+    <div class="container">
+        <hr>
+        <span>
+            Sua seleção especial
+        </span>
+        <hr>
+    </div>
+    <!-- <section class="container">
+        <div id="dynamic-content grid">
+            
+        </div>
+    </section> -->
+
+    <div class="itemms">
+        <div class="itemm">
+            <img src="ornitorrincos-caracteristicas-e-curiosidades-og.jpg" alt="">
+            <strong>nome item</strong>
+            <p>descrição</p>
+
+            <p>de: 8789</p>
+            <strong>por 9875</strong>
+            <p>2x de 78</p>
+
+            <button>comprar</button>
+        </div>
+
+        <div class="itemm">
+            <img src="Ornithorhynchus.jpg" alt="">
+            <strong>nome item</strong>
+            <p>descrição</p>
+
+            <p>de: 8789</p>
+            <strong>por 9875</strong>
+            <p>2x de 78</p>
+
+            <button>comprar</button>
+        </div>
+        <div class="itemm">
+            <img src="Ornithorhynchus.jpg" alt="">
+            <strong>nome item</strong>
+            <p>descrição</p>
+
+            <p>de: 8789</p>
+            <strong>por 9875</strong>
+            <p>2x de 78</p>
+
+            <button>comprar</button>
+        </div>
+        <div class="itemm" id="teste">
+            <!-- <img src="Ornithorhynchus.jpg" alt="">
+            <strong>nome item</strong>
+            <p>descrição</p>
+
+            <p>de: 8789</p>
+            <strong>por 9875</strong>
+            <p>2x de 78</p>
+
+            <button>comprar</button> -->
+        </div>
+
+    </div>
+
+    <footer class="footer-bg">
 
     </footer>
+
+
 </body>
+
 
 </html>
