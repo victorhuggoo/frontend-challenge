@@ -4,7 +4,11 @@ fetch(urlApi)
     .then(response =>
         response.json()
     ).then(data => {
-        var dynamicProducts;
+        var dynamicProducts = "";
+
+        var teste = data;
+
+        console.log(teste);
 
         var apiResponse = data.products;
 
@@ -14,7 +18,7 @@ fetch(urlApi)
             dynamicProducts += `
             <div class="dynamic-item">
                 <img src="http:${product.image}" alt="" >
-                <strong>${product.name}</strong>
+                <p class="product-name">${product.name}</p>
                 <p class="description">${product.description}</p>
     
                 <p class="old-price">de: R$:${product.oldPrice}</p>
