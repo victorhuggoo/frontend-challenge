@@ -181,18 +181,6 @@ header {
     margin-bottom: 0.4375rem;
 }
 
-
-/* .item .radio-input {
-    width: 55px;
-    height: 14px;
-    text-align: left;
-    font: normal normal normal 12px/14px Helvetica Neue;
-    letter-spacing: 0px;
-    color: #888888;
-    opacity: 1;
-    margin-bottom: 1.4375rem;
-} */
-
 .radio-style {
     width: 3.4375rem;
     height: 0.875rem;
@@ -212,24 +200,11 @@ header {
     opacity: 1;
 }
 
-
-/* 
-form .row {
-    width: 300px;
-} */
-
 .div-check {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-/* .div-check label,
-.div-check input {
-    width: initial;
-    display: inline-block;
-} */
 
 .item form input {
     margin-bottom: 1rem;
@@ -252,7 +227,7 @@ hr {
     opacity: 1;
 }
 
-.itemms {
+.dynamic-content {
     width: 900px;
     margin: 0 auto;
     display: flex;
@@ -261,11 +236,66 @@ hr {
     flex-wrap: wrap;
 }
 
-.itemm {
+.dynamic-item {
     width: 200px;
 }
 
-.itemm img {
-    width: 100%;
+.dynamic-item img {
+    width: 200px;
     height: 150px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.dynamic-item strong {
+    width: 96px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 16px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.dynamic-item .description{
+    width: 200px;
+    height: 60px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.dynamic-item .old-price{
+    width: 66px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.dynamic-item .price{
+    width: 88px;
+    height: 14px;
+    text-align: left;
+    font: normal normal normal 12px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    opacity: 1;
+}
+
+.dynamic-item .btn-buy {
+    width: 200px;
+    height: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    font: normal normal normal 16px/16px Helvetica;
+    letter-spacing: 0px;
+    color: #888888;
+    border-radius: 4px;
+    opacity: 1;
 }

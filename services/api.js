@@ -6,19 +6,26 @@ fetch(urlApi)
     ).then(data => {
         var dynamicProducts;
 
-        var apiResponse = data.products[0];
+        var apiResponse = data.products;
 
-        dynamicProducts += `
-            <img src=${apiResponse.image} alt="">
-            <strong>${apiResponse.name}</strong>
-            <p>${apiResponse.description}</p>
+        console.log(apiResponse);
 
-            <p>de: R$:${apiResponse.oldPrice}</p>
-            <strong>por: R$ ${apiResponse.price}</strong>
-            <p>2x de 78</p>
+        apiResponse.map((product, index) => {
+            dynamicProducts += `
+            <div class="dynamic-item">
+                <img src="http:${product.image}" alt="" >
+                <strong>${product.name}</strong>
+                <p class="description">${product.description}</p>
+    
+                <p class="old-price">de: R$:${product.oldPrice}</p>
+                <strong>por: R$ ${product.price}</strong>
+                <p class="price">ou ${product.installments.count}x de ${product.installments.value}</p>
+    
+                <button class="btn-buy">Comprar</button>
+            </div>`;
+        });
+        
+        document.getElementById('dynamic-content').innerHTML = dynamicProducts 
 
-            <button>comprar</button>
-            `;
-        document.getElementById('teste').innerText(dynamicProducts)
 
     });
