@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../utils/css/styles.css">
+    <script src="./services/api.js"></script>
+    <title>Front end || Challenge</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="container">
+            <h2 class="subtitle">uma seleção de produtos</h2>
+            <h1>especial para você</h1>
+            <h6>
+                Todos os produtos dessa lista foram selecionados a partir da sua
+                navegação. Aproveite!
+            </h6>
+        </div>
+    </header>
+    <section id="products">
+        <div class="container">
+            <h2>Olá, Fulano</h2>
+            <p>Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só:</p>
+            <div class="products" id="dynamicProducts">
+                <div class="flex-item text-center">
+                    <div class="card">
+                        <img class="card-image" src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=320&txt_altura=240&extensao=png&fundo_r=0.06274509803921569&fundo_g=0.996078431372549&fundo_b=0.9568627450980393&texto_r=0&texto_g=0&texto_b=0&texto=Produto&tamanho_fonte=10" alt="image" >
+                        <div class="card-body">
+                            <h4 class="card-name">Nome do produto</h4>
+                            <p class="card-description">Nome do produto</p>
+                            <p class="card-oldPrice">De: R$23,99</p>
+                            <p class="card-price">Por: R$19,99</p>
+                            <p class="card-installments">ou 2x de R$9,99</p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item text-center">
+                    <div class="card">
+                        <img class="card-image" src="https://www.4devs.com.br/4devs_gerador_imagem.php?acao=gerar_imagem&txt_largura=320&txt_altura=240&extensao=png&fundo_r=0.06274509803921569&fundo_g=0.996078431372549&fundo_b=0.9568627450980393&texto_r=0&texto_g=0&texto_b=0&texto=Produto&tamanho_fonte=10" alt="image" >
+                        <div class="card-body">
+                            <h4 class="card-name">Nome do produto</h4>
+                            <p class="card-description">Nome do produto</p>
+                            <p class="card-oldPrice">De: R$23,99</p>
+                            <p class="card-price">Por: R$19,99</p>
+                            <p class="card-installments">ou 2x de R$9,99</p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-bg"></div>
+        <div class="container">
+            <p>Testando suas habilidades em HTML, CSS e Javascript</p>
+            <p>Linx Impulse</p>
+            <p>2019</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

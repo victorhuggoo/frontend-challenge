@@ -10,7 +10,7 @@
   }
 
   header {
-    background: #707070;
+    background: transparent;
     text-align: center;
     padding-top: 50px;
     overflow: hidden;
@@ -20,7 +20,7 @@
   .header-bg {
     position: absolute;
     top: 0;
-    bottom: 53%;
+    bottom: 48%;
     right: 0;
     left: 0;
     background: #707070;
@@ -144,6 +144,18 @@
     text-align: center;
   }
 
+  .separator {
+      display: flex;
+
+  }
+  
+  hr {
+    width: 360px;
+    height: 0px;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+
   #newsletter p {
     font-size: 14px;
     text-align: center;
@@ -248,16 +260,8 @@
     border-radius: 4px;
     opacity: 1;
   }
-  #newsletter .container{
-    display: flex;
-    flex-direction: row;
-  }
-  #newsletter .cabecalho{
-    flex-basis: 100%;
-    width: 100%;
-  }
-  #newsletter .form-item{
-    flex-basis: 50%;
+  .text-center{
+    justify-content: center;
   }
   @media only screen and (max-width: 768px) {
     .container {
