@@ -14,60 +14,74 @@
     <header>
         <div class="header-bg"></div>
         <div class="container">
-          <h2 class="subtitle">uma seleção de produtos</h2>
-          <h1>especial para você</h1>
-          <h6>
-            Todos os produtos dessa lista foram selecionados a partir da sua
-            navegação. Aproveite!
-          </h6>
-          <div class="buttons">
-            <button>Conheça a Linx</button>
-            <button>Ajude o algoritmo</button>
-            <button>Seus produtos</button>
-            <button>Compartilhe</button>
-          </div>
+            <h2 class="subtitle">uma seleção de produtos</h2>
+            <h1>especial para você</h1>
+            <h6>
+                Todos os produtos dessa lista foram selecionados a partir da sua
+                navegação. Aproveite!
+            </h6>
+            <div class="buttons">
+                <button>Conheça a Linx</button>
+                <button>Ajude o algoritmo</button>
+                <button>Seus produtos</button>
+                <button>Compartilhe</button>
+            </div>
         </div>
-      </header>
-    <section class="container">
-        <div class="item">
-            <h3>Ajude o algorítimo a ser mais certeiro</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
-                convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium
-                consectetur. Praesent bibendum arcu
-                risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia
-                euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos. Vestibulum vel urna
-                tortor. Vivamus et arcu non felis tristique eleifend. <br> <br> Morbi eu condimentum urna. Curabitur eu
-                magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas
-                erat. Etiam ultricies a ante
-                vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum
-                erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit
-                libero, at mattis augue est
-                vel metus.</p>
-        </div>
-        <div class="item form">
-            <form action="post">
-                <label for="name">Seu nome:</label>
-                <input type="text" name="name" id="name">
-
-                <label for="email">Seu email:</label>
-                <input type="email" name="email" id="email">
-
-                <label for="cpf">Seu nome:</label>
-                <input type="text" name="cpf" id="cpf">
-
-                <div class="row radio-input">
-                    <div class="div-check">
-                        <input class="radio-style" type="radio" name="sex" id="checkM" value="M">
-                        <label for="checkM">Masculino</label>
+    </header>
+    <section id="contact">
+        <div class="container">
+            <div class="item">
+                <h2>Ajude o algoritmo a ser mais certeiro</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu
+                    urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper
+                    pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis
+                    ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean
+                    lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad
+                    litora torquent per conubia nostra, per inceptos himenaeos.
+                    Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
+                    eleifend.
+                </p>
+                <p>
+                    Morbi eu condimentum urna. Curabitur eu magna eget turpis
+                    condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar
+                    purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra.
+                    Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla
+                    varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi
+                    viverra, magna ac luctus commodo, odio ante suscipit libero, at
+                    mattis augue est vel metus.
+                </p>
+            </div>
+            <div class="item">
+                <form action="#">
+                    <div class="form-item">
+                        <label for="name">Seu nome</label>
+                        <input type="text" name="name" id="name" />
                     </div>
-                    <div class="div-check">
-                        <input class="radio-style" type="radio" name="sex" id="checkF" value="F">
-                        <label for="checkF">Feminino</label>
+                    <div class="form-item">
+                        <label for="name">E-mail</label>
+                        <input type="email" name="email" id="email" />
                     </div>
-                </div>
-                <button class="text-buttons" type="submit">Enviar</button>
-            </form>
+                    <div class="form-item">
+                        <label for="name">CPF</label>
+                        <input type="text" name="cpf" id="cpf" />
+                    </div>
+                    <div class="form-check">
+                        <div class="radio">
+                            <input type="radio" name="genre" id="masculino" value="m" />
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="genre" id="feminino" value="f" />
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <div class="container separator">
@@ -77,22 +91,45 @@
         </span>
         <hr>
     </div>
-    <section class="">
-        <div class="dynamic-content" id="dynamic-content">
-        </div>
+    <section id="products">
         <div class="container">
-            <button class="btn-more">Ainda mais produtos aqui!</button>
+            <h3>Sua seleção especial</h3>
+            <div class="products" id="dynamicProducts">
+
+            </div>
         </div>
     </section>
-    <div class="container separator">
-        <hr>
-        <span>
-            Compartilhe a novidade
-        </span>
-        <hr>
-    </div>
-    <footer class="footer-bg">
+    <section id="newsletter">
+        <div class="container">
+            <h3>Compartilhe a novidade</h3>
+            <p>
+                Quer que seus amigos também ganhem a lista personalizada deles?
+                Preecha agora!
+            </p>
+            <div class="item">
+                <div class="form-item">
+                    <label for="friendName">Nome do seu amigo:</label>
+                    <input type="text" name="friendName" id="friendName" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="form-item">
+                    <label for="emailFriend">E-mail do seu amigo</label>
+                    <input type="email" name="emailFriend" id="emailFriend" />
+                </div>
+            </div>
+            <div class="form-item">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>Testando suas habilidades em HTML, CSS e Javascript</p>
+            <p>Linx Impulse</p>
+            <p>2019</p>
+        </div>
     </footer>
 </body>
 
