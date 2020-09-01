@@ -20,7 +20,7 @@
   .header-bg {
     position: absolute;
     top: 0;
-    bottom: 50%;
+    bottom: 53%;
     right: 0;
     left: 0;
     background: #707070;
@@ -43,11 +43,13 @@
   header h2.subtitle {
     color: #ffffff;
     position: relative;
+    font-weight: 400;
   }
 
   header h6 {
     color: #ffffff;
     position: relative;
+    font-weight: 400;
     margin-bottom: 3.125rem;
   }
 
@@ -57,14 +59,14 @@
 
   .buttons button {
     position: relative;
-    width: 10rem;
-    height: 2.5rem;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    width: 160px;
+    height: 40px;
+    margin: 0 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #00000029;
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
-    margin: 0 1.25rem;
   }
 
   #contact .container {
@@ -107,6 +109,13 @@
     display: block;
   }
 
+  .send {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+  }
+
   .form-item label {
     margin-bottom: 0.25rem;
   }
@@ -142,7 +151,20 @@
   }
 
   footer {
-    padding: 3rem 0;
+    background: #707070;
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  .footer-bg {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #707070;
+    transform: skewY(6deg);
+    transform-origin: top right;
   }
 
   footer p {
@@ -172,7 +194,7 @@
     border: 1px solid #707070;
     opacity: 1;
   }
-  
+
   .card .card-name{
     font-size: 14px;
     font-weight: 400;
@@ -211,19 +233,113 @@
     border-radius: 4px;
     opacity: 1;
   }
+
+  .align-center {
+      text-align: center;
+  }
+
+  .more {
+    margin-top: 52px;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  #newsletter .container{
+    display: flex;
+    flex-direction: row;
+  }
+  #newsletter .cabecalho{
+    flex-basis: 100%;
+    width: 100%;
+  }
+  #newsletter .form-item{
+    flex-basis: 50%;
+  }
   @media only screen and (max-width: 768px) {
     .container {
       margin: 0 1rem;
     }
+
     header {
+      text-align: left;
       margin-bottom: 10rem;
+      background: transparent;
     }
+
+    .header-bg {
+        transform: skewY(11deg);
+    }
+
+    header h2.subtitle {
+        color: #ffffff;
+        position: relative;
+        font-weight: 400;
+    }
+
+    header h1 {
+        font-size: 40px;
+        color: #ffffff;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    header h6 {
+        color: #ffffff;
+        position: relative;
+        font-weight: 400;
+        margin-bottom: 3.125rem;
+        font-size: 14px;
+        margin-top: 9px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .buttons button {
+        width: 140px;
+    }
+
+    .products .flex-item{
+      flex-basis: 100%;
+      flex-grow: 1;
+    }
+
+    #products .card {
+      display: flex;
+      margin-top: 20px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .card-description {
+        display: none;
+    }
+
+    .card img {
+        flex-basis: 38%;
+        width: 169px;
+        height: 129px;
+    }
+
+    .card-body{
+      padding-left: 15px;
+      flex-basis: 62%;
+    }
+
     .buttons button {
       margin: 1rem;
     }
+
     #contact .item:first-child {
       flex-basis: 100%;
     }
+
     #contact .item:nth-child(2) {
       margin-top: 2rem;
       flex-basis: 100%;

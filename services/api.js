@@ -1,35 +1,44 @@
-const urlApi = "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1"
 
-fetch(urlApi)
-    .then(response =>
-        response.json()
-    ).then(data => {
-        var dynamicProducts = "";
+function listProducts(url = null) {
 
-        var teste = data;
+    let urlApi = (url == null) ? "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1" : "https://"+url;
 
-        console.log(teste);
+    fetch(urlApi)
+        .then(response =>
+            response.json()
+        ).then(data => {
+            var dynamicProducts = "";
+            var button = "";
+            var callNextPage = data;
+            var apiResponse = data.products;
 
-        var apiResponse = data.products;
+            apiResponse.map((product, index) => {
+                dynamicProducts += `
+                <div class="flex-item">
+                    <div class="card">
+                        <img class="card-image" src="https:${product.image}" alt="image" >
+                        <div class="card-body">
+                            <h4 class="card-name">${product.name}</h4>
+                            <p class="card-description">${product.description}</p>
+                            <p class="card-oldPrice">Old price: R$${product.oldPrice}</p>
+                            <p class="card-price">por: R$ ${product.price}</p>
+                            <p class="card-installments">ou ${product.installments.count} x R$${product.installments.value}</p>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>`;
+            });
 
-        console.log(apiResponse);
+            button += `<button class="more" onclick="listProducts('${callNextPage.nextPage}')">Ainda mais produtos aqui!</button>`
 
-        apiResponse.map((product, index) => {
-            dynamicProducts += `
-            <div class="dynamic-item">
-                <img src="http:${product.image}" alt="" >
-                <p class="product-name">${product.name}</p>
-                <p class="description">${product.description}</p>
-    
-                <p class="old-price">de: R$:${product.oldPrice}</p>
-                <strong>por: R$ ${product.price}</strong>
-                <p class="price">ou ${product.installments.count}x de ${product.installments.value}</p>
-    
-                <button class="btn-buy">Comprar</button>
-            </div>`;
+            var before = document.getElementById('dynamicProducts').outerHTML;
+
+            document.getElementById('dynamicProducts').innerHTML = before + dynamicProducts;
+            document.getElementById('more-products').innerHTML = button
+
+
         });
-        
-        document.getElementById('dynamic-content').innerHTML = dynamicProducts 
+}
 
 
-    });
+window.onload = listProducts();
