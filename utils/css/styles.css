@@ -20,7 +20,7 @@
   .header-bg {
     position: absolute;
     top: 0;
-    bottom: 48%;
+    bottom: 58%;
     right: 0;
     left: 0;
     background: #707070;
@@ -275,6 +275,7 @@
     }
 
     .header-bg {
+        bottom: 48%;
         transform: skewY(11deg);
     }
 
